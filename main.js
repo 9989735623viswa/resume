@@ -27,4 +27,12 @@ function loadjson(file){
 var fetchedData=loadjson("data.json");
 fetchedData.then(data=>{
   console.log(data);
+  career(data.career);
+
 })
+var child2=document.querySelector("#child2");
+function career(car){
+  var p=document.createElement("p");
+  p.textContent=car.info;
+  child2.appendChild(p);
+}
