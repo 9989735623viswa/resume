@@ -11,27 +11,31 @@
 // }
 // xhr.send();
 // }
-function loadjson(file){
-  return new Promise((resolve,reject)=>{
+function loadJSON(file){
+  return new Promise((resolve,request)=>{
     return fetch(file).then(response=>{
       if(response.ok){
         resolve(response.json());
       }else {
-        reject(new error('error'));
+        reject(new Error('error'));
       }
     })
   })
 }
 
 
-var fetchedData=loadjson("data.json");
+var fetchedData=loadJSON("data.json");
 fetchedData.then(data=>{
   console.log(data);
-  career(data.career);
+  carrer(data.carrer);
 
 })
 var child2=document.querySelector("#child2");
-function career(car){
+function carrer(car)
+{
+  var heading=document.createElement("h2");
+  heading.textContent="career objective";
+  child2.appendChild(heading);
   var p=document.createElement("p");
   p.textContent=car.info;
   child2.appendChild(p);
