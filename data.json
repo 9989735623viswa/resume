@@ -1,5 +1,27 @@
 {
   "carrer":{
     "info":"To pursue a challenging career and be a part of progressive organization that gives a scope to enhance my knowledge and utilizing my skills towards the growth of the organization"
-  }
+  },
+  "education":[
+        {
+      "degee":"mca",
+      "institute":"sietk",
+      "data":["2017-20","75%"]
+    },
+    {
+  "degee":"B.sc computer scince",
+  "institute":"sdc",
+  "data":["2013-2016","75%"]
+},
+    {
+      "degree":"mpc",
+      "institute":"s.u.g.m.jr college",
+      "data":["2013-15","60%"]
+    },
+    {
+      "degree":"ssc",
+      "institute":"zphs school",
+      "data":["2011","75%"]
+    }
+  ]
 }
