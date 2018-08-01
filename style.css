@@ -1,3 +1,6 @@
+tr:nth-child(odd){
+  background: #FF33F9;
+}
 .parent{
   display: flex;
   flex-direction: row;
@@ -107,4 +110,3 @@
              padding: 2px;
              margin: 2%
            }
-           
