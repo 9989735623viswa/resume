@@ -30,6 +30,7 @@ fetchedData.then(data=>{
   carrer(data.carrer);
 education(data.education);
 skills(data.skills);
+achievements(data.achievements);
 })
 
 var child2=document.querySelector("#child2");
@@ -79,5 +80,25 @@ title.textContent=skil[i].title;
 child2.appendChild(title);
 var list=document.createElement("ul");
 child2.appendChild(list);
+console.log(skil[i].set.length);
+for(var j=0;j<skil[i].set.length;j++){
+  var listItem=document.createElement("li");
+  listItem.textContent=skil[i].set[j];
+  list.appendChild(listItem);
 }
+}
+}
+// achievements
+function achievements (achievement){
+  var heading=document.createElement("h2");
+  heading.textContent="achievements";
+  child2.appendChild(heading);
+  var hLine=document.createElement("hLine");
+  heading.appendChild(hLine);
+  child2.appendChild(hLine);
+  for(var i=0;i<achievement.length;i++){
+    var achievedData=document.createElement("h4");
+    achievedData.textContent=achievement[i].achievedData;
+    child2.appendChild(achievedData);
+  }
 }

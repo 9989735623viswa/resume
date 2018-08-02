@@ -41,5 +41,13 @@
       "title":"operating system",
       "set":["dos","lynix","windows","mac"]
     }
+  ],
+  "achievements":[
+    {
+      "achievedData":"got 1st prize in shot filim."
+    },
+    {
+      "achievedData":"got 1st prize running."
+        }
   ]
 }
